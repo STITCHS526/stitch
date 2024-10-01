@@ -1,0 +1,28 @@
+header {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 3200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+main {
+    padding-top: 60px;
+    max-width: 3200px;
+    margin: 0 auto;
+    padding: 60px 2rem 0;
+}
+
+/* 其他布局相关样式... */

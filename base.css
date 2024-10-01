@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f3ff;
+    color: #333333;
+}
+
+h2 {
+    color: #3498db;
+}
+
+/* 其他基础样式... */

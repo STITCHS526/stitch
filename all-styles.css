@@ -1,0 +1,96 @@
+/* 从 base.css 复制所有内容 */
+
+/* 从 layout.css 复制所有内容 */
+
+/* 从 components.css 复制所有内容 */
+
+/* 从 responsive.css 复制所有内容 */
+
+/* 从 styles.css 复制所有内容 */
+
+/* 全局样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f3ff;
+    color: #333333;
+}
+
+/* 通用样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* 主要内容区域 */
+main {
+    padding-top: 60px;
+}
+
+/* 部分通用样式 */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto 0;
+}
+
+/* 移除所有区域的白色背景和阴影 */
+section, .about-content, .project-container, #projects .project-container, .hero-carousel {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* 调整标题样式以适应无背景 */
+section h2 {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 按钮通用样式 */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(to bottom, #42a1ec, #0070c9);
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    min-width: 28px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #51a9ee, #147bcd);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn:active {
+    background: linear-gradient(to bottom, #3d94d9, #0067b9);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+    transform: scale(0.98);
+}
+
+/* 在这里添加其他必要的样式 */

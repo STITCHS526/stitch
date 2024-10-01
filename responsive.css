@@ -1,0 +1,13 @@
+@media (max-width: 3200px) {
+    nav, main {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .project-item {
+        max-width: calc(25% - 0.75rem);
+    }
+}
+
+/* 其他响应式样式... */

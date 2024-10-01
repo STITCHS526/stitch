@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洛希没有极限的个人网站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="side-decoration left"></div>
+    <div class="side-decoration right"></div>
+    <header>
+        <nav>
+            <div class="logo">洛希没有极限</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item">首页</a></li>
+                    <li><a href="#projects" class="nav-item">摄影作品</a></li>
+                    <li><a href="#about" class="nav-item">关于我</a></li>
+                    <li><a href="#contact" class="nav-item">联系方式</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-carousel">
+                <div class="hero-slide">
+                    <img src="img/1.jpg" alt="创新科技" class="hero-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="img/2.jpg" alt="创意项目" class="hero-image">
+                </div>
+                <div class="hero-nav">
+                    <button class="hero-nav-button" data-index="0"></button>
+                    <button class="hero-nav-button" data-index="1"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>摄影作品</h2>
+            <div class="project-container">
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="img/11.jpg" alt="摄影作品1">
+                    </div>
+                    <div class="project-item">
+                        <img src="img/22.jpg" alt="摄影作品2">
+                    </div>
+                    <div class="project-item">
+                        <img src="img/33.jpg" alt="摄影作品3">
+                    </div>
+                    <div class="project-item">
+                        <img src="img/44.jpg" alt="摄影作品4">
+                    </div>
+                    <div class="project-item">
+                        <img src="img/55.jpg" alt="摄影作品5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <img src="img/3.jpg" alt="洛希没有极限的照片" class="profile-photo">
+                <div class="about-text">
+                    <p>我是洛希没有极限，一个充满激情的创意工作者。我专注于...</p>
+                    <p>我的技能包括：</p>
+                    <ul>
+                        <li>网页设计</li>
+                        <li>用户体验设计</li>
+                        <li>前端开发</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我</h3>
+                <p>洛希没有极限，热爱创作和摄影的艺术工作者。</p>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>邮箱：483874410@qq.com</p>
+                <p>电话：+86 15638089362</p>
+            </div>
+            <div class="footer-section">
+                <h3>关注我</h3>
+                <div class="social-links">
+                    <a href="https://b23.tv/0g8LNrR" target="_blank" title="B站"><i class="fab fa-bilibili"></i></a>
+                    <a href="weixin://dl/chat?15638089362" target="_blank" title="微信"><i class="fab fa-weixin"></i></a>
+                    <a href="https://v.douyin.com/iBLBFC5G/" target="_blank" title="抖音"><i class="fab fa-tiktok"></i></a>
+                   
+                    <a href="https://y.music.163.com/m/user?id=1995560952" target="_blank" title="网易云音乐"><i class="fas fa-music"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024  洛希没有极限  仅个人使用。</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

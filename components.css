@@ -1,0 +1,89 @@
+.hero-carousel {
+    width: 100%;
+    max-width: 1920px;
+    padding-bottom: 33.33%;
+    margin: 60px auto 2rem;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 移除所有区域的白色背景和阴影 */
+section, .about-content, .project-container, #projects .project-container, .hero-carousel {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* 调整标题样式以适应无背景 */
+section h2 {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 调整内容区域的样式 */
+.about-content, .project-container {
+    padding: 2rem 0;
+}
+
+/* 项目网格样式 */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* 项目项样式 */
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 16 / 9;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+.project-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover::after {
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(to bottom, #42a1ec, #0070c9);
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    /* 其他按钮样式... */
+}
+
+/* 其他组件样式... */
